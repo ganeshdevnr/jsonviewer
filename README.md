@@ -1,71 +1,41 @@
-# jsonviewer README
+# JSON Transform Helper
 
-This is the README for your extension "jsonviewer". After writing up a brief description, we recommend including the following sections.
+JSON Transform Helper is a Visual Studio Code extension that allows you to easily transform and manipulate JSON data using the powerful lodash library. With this extension, you can perform custom transformations on your JSON files, extracting specific properties, filtering data, and more.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Interactive Transformation**: Enter your own lodash functions in a dedicated text editor to dynamically transform JSON data.
+- **Real-Time Preview**: Get an instant preview of the transformed JSON output as you make changes, facilitating quick iterations and fine-tuning.
+- **Subset Extraction**: Use lodash functions like `_.pick`, `_.omit`, and `_.filter` to extract a subset of properties or filter JSON based on specific criteria.
+- **Lodash Function Support**: Leverage the extensive functionality of lodash with methods like `_.map`, `_.reduce`, `_.groupBy`, and more for complex data transformations.
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Open a JSON file in Visual Studio Code.
+2. Trigger the JSON Transform Helper extension using the provided command or keyboard shortcut.
+3. Enter your desired lodash function in the input box, specifying the transformation you want to apply.
+4. The transformed JSON output will be displayed in a new editor tab, allowing you to review and save it.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code version 1.60.0 or higher.
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Launch Visual Studio Code.
+2. Go to the Extensions view (Ctrl+Shift+X).
+3. Search for "JSON Transform Helper" and click **Install**.
+4. Once installed, the extension will be ready to use.
 
-For example:
+## Feedback and Support
 
-This extension contributes the following settings:
+- For bug reports, feature requests, or any other feedback, please [submit an issue](https://github.com/ganeshdevnr/jsonviewer/issues).
+- For general questions or help, you can also reach out to us via [email](mailto:ganesh.dev.nr@gmail.com).
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Contributing
 
-## Known Issues
+We welcome contributions from the community! If you're interested in enhancing JSON Transform Helper, please see our [contribution guidelines](https://github.com/your-extension-repo/blob/main/CONTRIBUTING.md) for more details.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## License
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is released under the [MIT License](https://github.com/your-extension-repo/blob/main/LICENSE).
