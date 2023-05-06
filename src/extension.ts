@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import * as _ from 'lodash';
 
-
 export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('extension.transformJson', async () => {
         const activeEditor = vscode.window.activeTextEditor;
@@ -28,8 +27,8 @@ async function showInputAndGetTransformedJson(document: vscode.TextDocument): Pr
 
     if (transformedJson) {
         try {
-            const lodashFn = eval(`(function(json) { return ${transformedJson}; })`);
-            const transformedResult = lodashFn(JSON.parse(jsonContent));
+            const lodashFn = eval(`(function(json, _) { return ${transformedJson}; })`);
+            const transformedResult = lodashFn(JSON.parse(jsonContent), _);
             return JSON.stringify(transformedResult, null, 2);
         } catch (error: any) {
             vscode.window.showErrorMessage('Error occurred while transforming JSON: ' + error.message);
