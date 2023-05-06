@@ -1,8 +1,12 @@
 {
-  "name": "jsonviewer",
+  "name": "jsonviewer007",
   "displayName": "jsonviewer",
   "description": "JSON Transform Helper is a powerful extension for Visual Studio Code that enables you to easily transform and manipulate JSON data using the popular lodash library. With this extension, you can quickly apply custom lodash functions to your JSON files, extracting specific properties, filtering data, performing calculations, and more.",
   "version": "0.0.1",
+  "publisher": "GaneshNR",
+  "repository": {
+    "url": "https://github.com/ganeshdevnr/jsonviewer"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
